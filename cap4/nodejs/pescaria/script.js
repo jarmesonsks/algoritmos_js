@@ -1,0 +1,10 @@
+const prompt = require("prompt-sync")() // adiciona o pacote de prompt
+const pessoas = Number(prompt("Nº Pessoas: ")) // lê os dados de entrada
+const peixes = Number(prompt("Nº Peixes: "))
+let pagar
+if (peixes <= pessoas) {
+    pagar = pesssoas * 20 
+} else {
+    pagar = (pessoas * 20) + ((peixes - pessoas) * 12)
+}
+console.log(`Pagar R$: ${pagar.toFixed(2)}`) // exibe o valor a ser pago

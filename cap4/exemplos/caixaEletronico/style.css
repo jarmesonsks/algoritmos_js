@@ -1,0 +1,90 @@
+/* === Estilos gerais === */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6ecf0;
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Cabeçalho e imagem === */
+img {
+    display: block;
+    margin: 30px auto 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+/* === Formulário === */
+form {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Campo de entrada */
+input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    margin-left: 10px;
+    border: 2px solid #004aad;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Botão */
+input[type="submit"] {
+    background-color: #004aad;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0066ff;
+    box-shadow: 0 0 8px rgba(0, 102, 255, 0.6);
+}
+
+/* === Respostas === */
+h3 {
+    color: #004aad;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+/* === Responsividade === */
+@media (max-width: 480px) {
+    img {
+        width: 200px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    input[type="number"] {
+        width: 80px;
+    }
+}

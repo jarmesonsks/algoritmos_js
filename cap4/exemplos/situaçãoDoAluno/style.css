@@ -1,0 +1,58 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6eef7;
+    color: #333;
+    padding: 40px;
+}
+
+/* Título principal */
+h1 {
+    color: #1a73e8;
+}
+
+/* Formulário */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #dce3ea;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos de entrada */
+form p {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botão */
+input[type="submit"] {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #155ab6;
+}
+
+/* Resultados */
+h3, h4 {
+    margin-top: 20px;
+    max-width: 400px;
+}

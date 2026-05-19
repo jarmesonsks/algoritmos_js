@@ -1,0 +1,94 @@
+/* Paleta de madeira */
+:root {
+    --fundo: #f1c394;
+    --madeira-clara: #d2b48c;
+    --madeira-media: #a67c52;
+    --madeira-escura: #6e4b1f;
+    --texto: #3e2c1c;
+}
+
+/* Fundo geral */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagem */
+img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    background-color: var(--madeira-clara);
+    border: 2px solid var(--madeira-escura);
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Título */
+h1 {
+    color: var(--madeira-escura);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Campos */
+form p {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--madeira-media);
+    border-radius: 5px;
+    background-color: #fffaf5;
+    box-sizing: border-box;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+/* Botões */
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--madeira-escura);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: var(--madeira-media);
+}
+
+/* Resultado */
+h3 {
+    margin-top: 25px;
+    max-width: 400px;
+    background-color: #fff9f3;
+    padding: 10px 15px;
+    border-left: 5px solid var(--madeira-media);
+    border-radius: 5px;
+}
