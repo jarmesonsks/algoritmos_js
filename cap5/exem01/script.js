@@ -2,7 +2,7 @@ const frm = document.querySelector("form") // obtem elementos da pagina
 const resp = document.querySelector("pre")
 
 frm.addEventListener("submit", (e) => {
-    e.preventDefault()
+    e.preventDefault() 
     const numero = Number(frm.inNumero.value)
     let resposta = ""
     // cria o laço de repetição, começa com 1 e é incrementado até 10
