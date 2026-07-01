@@ -11,8 +11,8 @@ frm.addEventListener("submit", (e) => {
     let lista = ""                              // string para concatenar pacientes
 
     // for "tradicional" (inicia em 0, enquanto menor que tamnho do array)
-    for (let i = 1; i < pacientes.length; i++) {
-        lista += `${i+1}. ${pacientes[i]}\n`
+    for (let i = 0; i < pacientes.length; i++) {
+        lista += `${i + 1}. ${pacientes[i]}\n`
     }
 
     respLista.innerText = lista                 // exibe a lista de pacientes na página
