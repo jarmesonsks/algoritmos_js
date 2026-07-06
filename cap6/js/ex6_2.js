@@ -27,7 +27,7 @@ frm.addEventListener("submit", (e) => {
             respChances.innerText = numChances
             if (numChances == 0) {
                 alert("Suas chances acabaram...")
-                frm.btSubmit.disabled = true // troca status dos botões
+                frm.btSubmit.disabled = true // troca status do botão
                 frm.btNovo.className = "exibe"
                 respDica.innerText = `Game Over!! Número sorteado: ${sorteado}`
 
