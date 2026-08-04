@@ -61,5 +61,5 @@ frm.btSimuluar.addEventListener("click", () => {
     for(const carro of carrosDesc) { // percorre cada elemento do array
         lista += `${carro.modelo} - R$: ${carro.preco.toFixed(2)}\n`
     }
-    resp.innerText = `Carros com desconto: ${desconto}%\n${"-".repeat(40)}\n${lista]}`
-}
+    resp.innerText = `Carros com desconto: ${desconto}%\n${"-".repeat(40)}\n${lista}`
+})
