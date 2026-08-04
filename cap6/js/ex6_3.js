@@ -47,4 +47,19 @@ frm.btFiltrar.addEventListener("click", () => {
         lista += `${carro.modelo} - R$ ${carro.preco.toFixed(2)}\n`
     }
     resp.innerText = `Carros Até R$: ${maximo.toFixed(2)}\n${"- ".repeat(40)}\n${lista}`
-})
+}) 
+frm.btSimuluar.addEventListener("click", () => {
+    const desconto = Number(prompt("Qual o percentual de desconto: "))
+    if (desconto == 0 || isNam(desconto)){ // se não informou ou valor inválido
+        return
+    }
+    const carrosDesc = carros.map(aux => ({
+        modelo: aux.modelo,
+        preco: aux.preco - (aux.preco * desconto / 100)
+    }))
+    let lista = ""
+    for(const carro of carrosDesc) { // percorre cada elemento do array
+        lista += `${carro.modelo} - R$: ${carro.preco.toFixed(2)}\n`
+    }
+    resp.innerText = `Carros com desconto: ${desconto}%\n${"-".repeat(40)}\n${lista]}`
+}
